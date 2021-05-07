@@ -1,0 +1,35 @@
+footer {
+  background-color: $primary;
+  color: $text-color;
+}
+.footer-wrapper {
+  min-height: 20vh;
+  width: 90%;
+  margin: auto;
+  @include flex(column, center, space-around);
+  flex-wrap: wrap;
+}
+.footer-top {
+  @include flex(row, space-around, center);
+  padding: 2rem;
+}
+h6 {
+  flex: 2 1 25rem;
+}
+.social-links {
+  @include flex(row, space-around, center);
+  flex: 1 1 25rem;
+}
+.footer-nav {
+  flex-wrap: wrap;
+  @include flex(row, space-around, center);
+  padding: 2rem;
+  // border-top: 0.5rem solid $orange;
+  // padding: 2rem;
+}
+
+.footer-text {
+  text-align: center;
+  border-top: 0.5rem solid $orange;
+  padding: 2rem;
+}

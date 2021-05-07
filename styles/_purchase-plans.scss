@@ -1,0 +1,119 @@
+.pricing {
+  min-height: 140vh;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  @include flex(column, flex-start, center);
+  flex-wrap: wrap;
+  ul {
+    padding: 2rem;
+  }
+  li {
+    list-style: url('../icons/check.svg');
+    list-style-position: outside;
+  }
+  li:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  // li:before {
+  //   content: '\2714';
+  //   color: $orange;
+  //   margin-right: 1rem;
+  // }
+}
+.pricing-title {
+  text-align: center;
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+}
+.pricing-title::after {
+  content: '';
+  height: 0.5rem;
+  width: 50%;
+  border-radius: 1rem;
+  background-color: $orange;
+  position: absolute;
+  // left: calc(50%- (width/2)%);
+  left: 25%;
+  bottom: 0rem;
+}
+.pricing-caption {
+  text-align: center;
+  padding: 1rem;
+}
+
+.personal-plan,
+.business-plan {
+  @include flex(column, flex-start, center);
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  min-width: 100%;
+  // box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.5);
+}
+.business-plan {
+  margin-top: 4rem;
+  h4,
+  p {
+    padding: 1rem;
+    text-align: center;
+  }
+  span {
+    color: $orange;
+  }
+  button {
+    border-radius: 1rem;
+    background-color: $btn-color;
+    padding: 2rem 9rem;
+    margin: 1rem;
+  }
+  button:hover {
+    background-color: $blue;
+  }
+}
+
+.pp-title {
+  text-align: center;
+}
+.pp-content {
+  @include flex(row, space-around, flex-start);
+  position: relative;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.semi-annual,
+.annual {
+  background-color: rgba(255, 255, 255, 0.07);
+  // box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  min-height: 45rem;
+  flex: 1 1 40rem;
+  flex-wrap: wrap;
+  position: relative;
+  @include flex(column, flex-start, center);
+}
+.a-content,
+.sa-content {
+  padding: 2rem;
+}
+.pp-btns {
+  border-radius: 1rem;
+  background-color: $btn-color;
+  position: absolute;
+  bottom: 2rem;
+}
+.pp-btns:hover {
+  background-color: $blue;
+}
+.trial-btn {
+  border: 3px solid $btn-color;
+  margin: 1rem;
+}
+.semi-annual-price,
+.annual-price {
+  position: absolute;
+  bottom: 25%;
+}

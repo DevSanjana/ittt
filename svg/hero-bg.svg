@@ -1,0 +1,26 @@
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hero-bg" clip-path="url(#clip0)">
+<rect width="1440" height="1024" fill="#181D27"/>
+<g id="sea-green" filter="url(#filter0_f)">
+<path d="M134.373 899.866C155.149 929.043 156.88 975.848 153.764 1019.01C150.82 1062.37 143.029 1101.88 122.08 1118.9C101.304 1135.92 67.5432 1130.24 35.6867 1127.81C4.00322 1125.38 -25.7757 1125.99 -45.513 1109.17C-65.2502 1092.15 -74.9457 1057.3 -77.0233 1020.22C-79.274 982.94 -73.7337 943.227 -53.9965 914.049C-34.2593 884.872 -0.325119 866.231 36.5523 862.787C73.6029 859.14 113.597 870.689 134.373 899.866Z" fill="#00FFB2"/>
+</g>
+<g id="blue" filter="url(#filter1_f)">
+<path d="M1546.9 398.262C1590.29 445.284 1615.73 516.131 1616.53 588.231C1617.6 660.331 1593.5 733.059 1550.38 775.065C1506.99 817.071 1444.85 827.729 1389.68 819.266C1334.51 811.115 1286.3 783.529 1244.78 741.523C1203.54 699.83 1168.72 643.403 1174.88 594.5C1181.04 545.598 1228.45 503.905 1269.69 456.883C1311.2 410.174 1346.83 357.823 1395.04 343.09C1443.25 328.356 1503.78 351.24 1546.9 398.262Z" fill="#002B80"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="-477.493" y="462.135" width="1032.47" height="1068.57" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur"/>
+</filter>
+<filter id="filter1_f" x="774.169" y="-61.3453" width="1242.4" height="1283.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur"/>
+</filter>
+<clipPath id="clip0">
+<rect width="1440" height="1024" fill="white"/>
+</clipPath>
+</defs>
+</svg>

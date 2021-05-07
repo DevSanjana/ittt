@@ -1,0 +1,51 @@
+$header1: 4.6rem;
+$header2: 3.6rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 1.5rem;
+$primary: #181d27;
+$btn-color: #004aaa;
+$orange: #f7921d;
+$blue: #002b80;
+$sea-green: #00ffb2;
+$big-btn: 2rem;
+$text-color: rgba(255, 255, 255, 0.87);
+$text-secondary: rgba(255, 255, 255, 0.4);
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import 'global';
+@import 'hero';
+@import 'features';
+@import 'popular';
+@import 'aboutCourse';
+@import 'purchase-plans';
+@import 'news-letter';
+@import 'footer';
+
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 53%;
+  }
+  .main-illustration svg {
+    width: 80%;
+  }
+  // nav {
+  // }
+}
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  .main-illustration svg {
+    height: 60%;
+  }
+  .main-head {
+    width: 100%;
+  }
+}

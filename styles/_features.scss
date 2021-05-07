@@ -1,0 +1,56 @@
+.features {
+  min-height: 100vh;
+  color: $text-color;
+  background-color: $primary;
+}
+.features-wrapper {
+  width: 90%;
+  margin: auto;
+  @include flex(column, center, center);
+  // @include flex(row, center, center);
+}
+.features-intro {
+  text-align: center;
+  margin: 2rem;
+  h2 {
+    padding: 1rem;
+    span {
+      color: $orange;
+    }
+  }
+  p {
+    color: $text-secondary;
+  }
+}
+.features-cards {
+  @include flex(row, space-around, start);
+  flex-wrap: wrap;
+  min-height: 50vh;
+  padding: 3rem;
+}
+.card {
+  flex: 1 1 30rem;
+  @include flex(column, space-around, center);
+  max-width: 40rem;
+  margin: 0 2rem 2rem 2rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  // box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  // background-color: lightpink;
+  h4 {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  p {
+    color: $text-secondary;
+  }
+}
+
+.card img {
+  max-width: 30%;
+  // margin: 1rem;
+}
+// // .card-icon {
+// //   background: $primary;
+//  }

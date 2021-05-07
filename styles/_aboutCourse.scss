@@ -1,0 +1,46 @@
+.about-courses {
+  background-image: url('../img/bg1.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+}
+.about-courses-wrapper {
+  width: 90%;
+  margin: auto;
+  @include flex(row, flex-start, center);
+  flex-wrap: wrap;
+  padding: 2rem 0rem;
+}
+.course-img {
+  @include flex(column, center, center);
+  flex: 1 1 40rem;
+}
+.courseText {
+  @include flex(column, center, flex-start);
+  flex: 2 1 40rem;
+  margin-left: 10rem;
+  h3 {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    display: inline-block;
+    position: relative;
+  }
+  h3::after {
+    content: '';
+    height: 0.5rem;
+    width: 40%;
+    border-radius: 1rem;
+    background-color: $orange;
+    position: absolute;
+    // left: calc(50%- (width/2)%);
+    left: 30%;
+    bottom: 0rem;
+  }
+  // ul {
+  //   @include flex(column, space-around, center);
+  // }
+  li {
+    font-size: $header4;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,80 @@
+.news-letter {
+  background-image: url('../img/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  p {
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+}
+.nl-title {
+  padding: 1rem;
+}
+.nl-btn {
+  background-color: $btn-color;
+  font-size: $big-btn;
+  margin: 1rem;
+  padding: 2rem 8rem;
+  // animation: subscribe 0.5s ease-in-out infinite alternate;
+}
+.nl-btn:hover {
+  background-color: $blue;
+}
+@keyframes subscribe {
+  from {
+    transform: rotatez(5deg);
+  }
+  to {
+    transform: rotatez(-5deg);
+  }
+}
+// .nl-title {
+//   padding: 1rem;
+//   display: inline-block;
+//   position: relative;
+// }
+// .nl-title::after {
+//   content: '';
+//   height: 0.5rem;
+//   width: 20%;
+//   border-radius: 1rem;
+//   background-color: $orange;
+//   position: absolute;
+//   left: 40%;
+//   bottom: 0rem;
+// }
+.news-letter-wrapper {
+  min-height: 40vh;
+  width: 90%;
+  margin: auto;
+  @include flex(row, space-around, center);
+}
+.news-letter-content {
+  flex: 2 1 25rem;
+  @include flex(column, center, flex-start);
+  padding: 0rem 4rem;
+}
+.mail {
+  flex: 1 1 25rem;
+  @include flex(column, center, center);
+}
+#c1 {
+  animation: circle 4s ease-in-out infinite alternate;
+}
+#c2 {
+  animation: circle 2s linear infinite alternate;
+}
+#c3 {
+  animation: circle 3s ease-in-out infinite alternate;
+}
+#c4 {
+  animation: circle 3s ease-in-out 1s infinite alternate;
+}
+@keyframes circle {
+  from {
+    transform: translatey(5%);
+  }
+  to {
+    transform: translatey(-5%);
+  }
+}

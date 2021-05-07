@@ -1,0 +1,181 @@
+/* HEADER NAVIGATION */
+.main-head {
+  min-height: 10vh;
+  background-color: $primary;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0rem;
+  flex-wrap: wrap;
+  ul {
+    flex: 2 1 40rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  li:hover {
+    font-size: 1.8rem;
+  }
+}
+
+.logo {
+  flex: 1 1 40rem;
+}
+/* LOGO ANIMATION */
+#logo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 90vh;
+  color: $text-color;
+  // background-color: $primary;
+  background-image: url('../img/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-text {
+  flex: 2 1 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.hero-btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero h1 {
+  font-size: $header1;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+/* hero-Buttons */
+.btn-purchase {
+  background-color: $btn-color;
+  margin: 2rem;
+  font-size: $big-btn;
+}
+.btn-purchase:hover {
+  background-color: $blue;
+}
+.btn-hero-freeTrail {
+  border: 3px solid $btn-color;
+  margin: 2rem;
+  font-size: $big-btn;
+}
+
+/* HERO ILLUSTRATION */
+.hero-illustration {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+/* HERO ILLUSTRATION ANIMATION */
+#network {
+  animation: networking 6s ease-in-out infinite alternate;
+}
+@keyframes networking {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(0.9, 0.9);
+  }
+}
+// #shortHand {
+//   animation: rotate 0.5s infinite linear;
+//   transform-origin: bottom;
+//   transform-box: fill-box;
+// }
+// #longHand {
+//   animation: rotate 1.5s infinite linear;
+//   transform-origin: bottom;
+//   transform-box: fill-box;
+// }
+#gear {
+  animation: rotate 8s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#datascience {
+  animation: rotate 4s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes rotate {
+  from {
+    transform: rotatez(0deg);
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
+#python {
+  animation: El 4s linear infinite alternate-reverse;
+}
+
+#cpp {
+  animation: El 2s ease-in-out infinite alternate;
+}
+#logo-html {
+  animation: El 6s linear infinite alternate-reverse;
+}
+#java {
+  animation: El 4s linear infinite alternate-reverse;
+}
+#js {
+  animation: El 4s linear infinite alternate;
+}
+#c-sharp {
+  animation: El 2s linear infinite alternate-reverse;
+}
+#logo-css {
+  animation: El 6s linear infinite alternate-reverse;
+}
+@keyframes El {
+  from {
+    transform: translatey(0%);
+  }
+  to {
+    transform: translatey(5%);
+  }
+}
+#plant {
+  animation: plant 2s ease-in-out infinite alternate-reverse;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+@keyframes plant {
+  from {
+    transform: rotatez(0deg) translatey(5%);
+  }
+  to {
+    transform: rotatez(10deg) translatey(8%);
+  }
+}
