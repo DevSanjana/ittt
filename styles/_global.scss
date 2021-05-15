@@ -12,6 +12,7 @@ body {
   animation: opening 1s ease-in-out;
   background-color: $primary;
   color: $text-color;
+  scroll-behavior: smooth;
 }
 /* opening animation */
 @keyframes opening {

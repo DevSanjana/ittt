@@ -2,6 +2,9 @@
 .main-head {
   min-height: 10vh;
   background-color: $primary;
+  position: sticky;
+  top: 0rem;
+  z-index: 10;
 }
 
 nav {
@@ -31,6 +34,17 @@ nav {
 /* LOGO ANIMATION */
 #logo:hover {
   transform: scale(1.1, 1.1);
+}
+
+.login-signup-btn {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.login-signup-btn:hover {
+  border: 2px solid $orange;
+}
+.login-signup-btn:focus {
+  background-color: $orange;
 }
 
 /* HERO SECTION */
@@ -85,7 +99,13 @@ nav {
   margin: 2rem;
   font-size: $big-btn;
 }
-
+.btn-hero-freeTrail:hover {
+  border: 3px solid $blue;
+}
+.btn-purchase a,
+.btn-hero-freeTrail a {
+  font-size: $big-btn;
+}
 /* HERO ILLUSTRATION */
 .hero-illustration {
   flex: 1 1 40rem;

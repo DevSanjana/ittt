@@ -41,6 +41,29 @@
   // }
   li {
     font-size: $header4;
-    padding: 2rem;
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+    list-style-position: outside;
   }
+  li:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+.ac1 {
+  list-style: url('../icons/video.svg');
+}
+.ac2 {
+  list-style: url('../icons/doubt.svg');
+}
+.ac3 {
+  list-style: url('../icons/checking.svg');
+}
+.ac4 {
+  list-style: url('../icons/download.svg');
+}
+.ac5 {
+  list-style: url('../icons/idea.svg');
+}
+.ac6 {
+  list-style: url('../icons/badge.svg');
 }

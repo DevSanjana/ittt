@@ -51,6 +51,6 @@
   max-width: 30%;
   // margin: 1rem;
 }
-// // .card-icon {
-// //   background: $primary;
-//  }
+.card-icon {
+  @include flex(column, center, center);
+}

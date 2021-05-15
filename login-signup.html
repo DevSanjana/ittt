@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=""
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="./icons/itt-icon.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Log In / Sign Up | IT Tools Training</title>
+    <script
+      src="https://kit.fontawesome.com/096a6ddd17.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="login-signup">
+          <form action="#" class="login-form">
+            <p class="back-home1"><a href="./index.html"><i class="fas fa-home"></i></a></p>
+            <h3 class="title">Welcome Back</h3>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" required/>
+            </div>
+            <div class="input-field password-container">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+              <i class="material-icons mysize visibility">visibility_off</i>
+            </div>
+            <input type="submit" value="login" class="btn" />
+
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+            <p class="or">Or</p>
+            <div class="social">
+              <a href="#">
+                <i class="fab fa-google"></i>
+                <p>Continue with Google</p>
+              </a>
+            </div>
+          </form>
+
+          <form action="#" class="signup-form">
+            <p class="back-home2"><a href="./index.html"><i class="fas fa-home"></i></a></p>
+            <h3 class="title">Sign Up</h3>
+            <p class="signup-cap">Sign up to activate Free Trial</p>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" required />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div class="input-field password-container">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+              <i class="material-icons mysize visibility">visibility_off</i>
+            </div>
+            <input type="submit" value="Sign Up" class="btn" />
+
+            <p class="signup-agree">
+              By clicking "Sign Up" you agree to our
+              <a href="./terms.html">Terms</a> &
+              <a href="./privacy.html">Privacy Policy</a>.
+            </p>
+            <p class="or">Or</p>
+            <div class="social">
+              <a href="#">
+                <i class="fab fa-google"></i>
+                <p>Continue with Google</p>
+              </a>
+            </div>
+            <!-- <button class="plans-btn"><a href="./index.html/#pricing">View Purchase Plans</a></button> -->
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="panel-content">
+            <h3>New Here ?</h3>
+            <p>Sign up to start your Free 7 days of unlimited classes.</p>
+            <button class="btn-transparent" id="signup-btn">Sign up</button>
+          </div>
+          <img src="img/signup.svg" class="image" alt="" />
+          </div>
+          
+        <div class="panel right-panel">
+          <div class="panel-content">
+            <h3>One of us ?</h3>
+            <p>
+              Login and continue learning.
+            </p>
+            <button class="btn-transparent" id="login-btn">Log In</button>
+          </div>
+          <img src="img/login.svg" class="image" alt="" />
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
